@@ -20,8 +20,10 @@ if (isset($_POST['book_id'])) {
 
         if ($borrowedBook) {
             echo "<p>Book return successfully.</p>";
+            header("Location: index.php");
         } else {
             echo "<p>Failed to return the book.</p>";
+            header("Location: index.php");
         }
     } else {
         echo "<p>Library not found.</p>";

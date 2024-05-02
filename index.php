@@ -77,6 +77,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             </form>
         </div>
     </div>
+    <form method="GET" action="search.php">
+        <input type="text" name="keyword" placeholder="Masukkan kata kunci pencarian">
+        <button type="submit" class="btn btn-success">Cari</button>
+    </form>
+
 
     <?php
     if (isset($_SESSION['library'])) {
